@@ -1,12 +1,7 @@
 {% extends "base.html" %}
 {% load i18n staticfiles mezzanine_tags %}
 
-{% block meta_title %}{{ series.title }} Sermon Series{% endblock %}
-{% block title %}{{ series.title }} Sermon Series{% endblock %}
-
-{% block breadcrumb_menu %}
-<li class="active">Sermons / {{ series.title }}</li>
-{% endblock %}
+{% block title %}{{ series.title }}{% endblock %}
 
 {% block full_width_content %}
     <div class="row bottommargin-sm">
