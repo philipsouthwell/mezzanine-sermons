@@ -4,6 +4,9 @@
 {% block title %}{{ series.title }}{% endblock %}
 
 {% block full_width_content %}
+<div class="container">
+<div class="row">
+    <div class="col-md-12 middle">
     <div class="row bottommargin-sm">
         <div class="col-md-12">
             {% if series.image %}
@@ -33,4 +36,7 @@
             </tbody>
         </table>
     {% endif %}
+    </div>
+</div>
+</div>
 {% endblock %}
