@@ -29,7 +29,7 @@
                         {% endif %}
                         <td>{{ series.title }}</td>
                         <td>{{ series.bible_passage }}</td>
-                        <td>{{ series.description|truncatechars:30 }}...</td>
+                        <td>{{ series.description|truncatewords:30 }}...</td>
                         <td>{{ series.start_date.year }}</td>
                     </tr>
                 {% endfor %}
