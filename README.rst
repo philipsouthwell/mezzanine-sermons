@@ -48,6 +48,9 @@ Installation
        url(r'^sermons/', include('mezzanine_sermons.urls', namespace="sermons", app_name='mezzanine_sermons')),
 
 
-   Then create pages at the following urls:
+   Then create pages using base.html at:
    *   sermons
    *   sermons/allseries
+
+   The block {% full_width_content %} must appear in your base as this is where the template places the data.
+

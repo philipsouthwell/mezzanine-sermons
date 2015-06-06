@@ -41,7 +41,7 @@ class Sermon(models.Model):
     title = models.CharField(max_length=60)
     passage = models.CharField(max_length=100, help_text="The bible passage for the individual sermon",
                                blank=True)
-    preacher = models.CharField(max_length=100)
+    preacher = models.CharField(max_length=100, blank=True)
     date = models.DateField(blank=False)
     audio = FileField(verbose_name="The audio file", max_length=255, blank=True,
                       help_text="Select the audio file using the file manager (Only .mp3 files accepted)")
