@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load i18n staticfiles mezzanine_tags %}
 
+{% block meta_title %}{{ series.title }}{% endblock %}
 {% block title %}{{ series.title }}{% endblock %}
 
 {% block full_width_content %}
