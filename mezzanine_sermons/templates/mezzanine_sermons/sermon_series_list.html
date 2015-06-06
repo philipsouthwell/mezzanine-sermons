@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% load i18n staticfiles mezzanine_tags %}
 
-{% block meta_title %}{% trans "Sermons" %}{% endblock %}
-{% block title %}{% trans "Sermons" %}{% endblock %}
-
-{% block breadcrumb_menu %}
-<li class="active">{% trans "Sermons" %}</li>
-{% endblock %}
-
 {% block full_width_content %}
     {% if sermon_series %}
         <h2>Sermon Series</h2>
