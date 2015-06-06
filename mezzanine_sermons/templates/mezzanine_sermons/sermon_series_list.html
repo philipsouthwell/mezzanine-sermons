@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% load i18n staticfiles mezzanine_tags %}
 
+{% block title %}Sermon Series{% endblock %}
+
 {% block full_width_content %}
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12 middle">
     {% if sermon_series %}
         <table class="table table-hover table-condensed">
             <thead>
@@ -30,4 +36,7 @@
             </tbody>
         </table>
     {% endif %}
+    </div>
+</div>
+</div>
 {% endblock %}
