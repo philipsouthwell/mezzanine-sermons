@@ -11,7 +11,7 @@
     {% if user.is_authenticated %}
     <td>
         {% if sermon.audio %}
-        <audio controls>
+        <audio controls preload="none">
             <source src="{{ sermon.audio.url }}" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
