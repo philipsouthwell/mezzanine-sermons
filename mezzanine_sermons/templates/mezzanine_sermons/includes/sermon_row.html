@@ -8,7 +8,6 @@
         <a href="{{ file.file.url }}">{{ file.name }}</a><br/>
         {% endfor %}
     </td>
-    {% if user.is_authenticated %}
     <td>
         {% if sermon.audio %}
         <audio controls preload="none">
@@ -17,5 +16,4 @@
         </audio>
         {% endif %}
     </td>
-    {% endif %}
 </tr>
