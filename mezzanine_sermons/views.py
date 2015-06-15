@@ -25,7 +25,7 @@ def sermon_series_list(request):
     """
     Displays page containing list of all sermon series (if any)
     """
-    sermon_series = SermonSeries.objects.filter()
+    sermon_series = SermonSeries.objects.filter().order_by('-start_date')
     context = {'sermon_series': sermon_series}
     return render(request, 'mezzanine_sermons/sermon_series_list.html', context)
 
