@@ -6,7 +6,7 @@ from mezzanine_sermons.models import SermonSeries, Sermon, SermonFile
 
 
 class SermonSeriesAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ['title', 'bible_passage', 'description']
 
 
 class SermonFileInline(admin.StackedInline):
@@ -16,7 +16,7 @@ class SermonFileInline(admin.StackedInline):
 
 
 class SermonAdmin(admin.ModelAdmin):
-    search_fields = ['series', 'title', 'passage', 'preacher']
+    search_fields = ['series__title', 'series__bible_passage', 'series__description', 'title', 'passage', 'preacher']
     inlines = [SermonFileInline, ]
 
 
