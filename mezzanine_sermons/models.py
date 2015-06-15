@@ -24,6 +24,7 @@ class SermonSeries(models.Model):
                       help_text="Use the media manager to upload and select an image for the sermon series")
 
     class Meta:
+        ordering = ['-start_date']
         verbose_name = "Sermon Series"
         verbose_name_plural = "Sermon Series"
 
